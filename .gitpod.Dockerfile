@@ -14,4 +14,4 @@ USER gitpod
 RUN sudo apt-get -q update && \
     sudo apt-get install -y jetty9 && \
     sudo rm -rf /var/lib/apt/lists/* && \
-    sudo mkdir -p src{main/java,main/resouces,main/webapp,test/java}
+    sudo gradle wrapper --gradle-version=6.0
