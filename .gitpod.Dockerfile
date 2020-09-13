@@ -13,4 +13,5 @@ USER gitpod
 
 RUN sudo apt-get -q update && \
     sudo apt-get install -y jetty9 && \
-    sudo rm -rf /var/lib/apt/lists/*
+    sudo rm -rf /var/lib/apt/lists/* && \
+    sudo gradle init --type java-library
