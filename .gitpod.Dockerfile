@@ -11,8 +11,7 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN sudo mkdir -p src{main/java,main/resouces,main/webapp,test/java} && \
-    sudo apt-get -q update && \
+RUN sudo apt-get -q update && \
     sudo apt-get install -y jetty9 && \
     sudo rm -rf /var/lib/apt/lists/* && \
-    sudo gradle wrapper --gradle-version=6.0 
+    sudo mkdir -p src{main/java,main/resouces,main/webapp,test/java}
