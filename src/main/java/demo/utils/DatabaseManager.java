@@ -12,7 +12,7 @@ public class DatabaseManager {
     }
 
     private DatabaseManager() {
-        factory = Persistence.createEntityManagerFactory("sample_db");
+        factory = Persistence.createEntityManagerFactory("demo_db");
     }
 
     public static DatabaseManager getInstance() {
