@@ -25,13 +25,15 @@ public class MainController extends HttpServlet {
 
         EntityManager em = DatabaseManager.getInstance().getEntityManager();
 
-        Sample s = em.find(Sample.class, 1);
+        Sample s = em.find(Sample.class, 1L);
 
         if(s != null) {
             request.setAttribute("name", s.getName());
         } else {
-            request.setAttribute("name", "Takaki Minami");            
+            request.setAttribute("name", "Nanashi Gombei");            
         }
+
+        em.close();
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/index.jsp");
         rd.forward(request, response);
