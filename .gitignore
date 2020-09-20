@@ -1,12 +1,18 @@
 .classpath
 .project
-.class
 gradlew
 gradlew.bat
+*.class
+
+*.jar
+*.war
+*.ear
 
 gradle/**
 bin/**
 build/**
 .gradle/**
 .settings/**
+.theia/**
+
 
