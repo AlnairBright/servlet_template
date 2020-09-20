@@ -3,13 +3,18 @@ image:
 
 vscode:
   extensions:
-    - SummerSun.vscode-jetty
+    - SummerSun.vscode-jetty@0.1.11:BzJ7WZqzu8uEPE/KW4n9pQ==
+
+    - richardwillis.vscode-gradle@3.4.5:B2vmhZgD8MLEDUhBq10bxQ==
+
+    - cool2k.vscode-lombok@1.0.2:e816/wZO588Jp8PN58Wj6g==
+
+    - vscjava.vscode-java-test@0.24.1:adMLnibuhohxpDp7AmLe9g==
 
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 8080
 #    onOpen: open-preview
-
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: echo 'init script' # runs during prebuild
